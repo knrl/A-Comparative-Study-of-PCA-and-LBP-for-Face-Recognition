@@ -1,10 +1,4 @@
 # A-Comparative-Study-of-PCA-and-LBP-for-Face-Recognition-Under-Illumination-Variations
-principal component analysis, local binary patterns, feature extraction, facial recognition, lighting
-
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
