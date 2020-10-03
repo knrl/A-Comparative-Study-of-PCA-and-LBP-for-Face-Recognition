@@ -23,7 +23,13 @@ The purpose of this study is to compare the facial recognition performance of PC
 <p>
 In component extraction, the component with the highest variance is taken from the data groups, and dimensions with lower variance are not taken considering that they will not be as effective as the others in the decision-making process. In this way, the size is reduced. PCA is therefore also used for size reduction and shaping the data set. Size reduction benefits; It can be stated as shortening the calculation time, making the data more understandable and facilitating visualization.
 </p>
-
+<br/>
+<h2>How does LBP work?</h2>
+<p>
+  Local Binary Pattern (LBP) is a simple yet very efficient texture operator which labels the pixels of an image by thresholding the neighborhood of each pixel and considers the result as a binary number (<a href="http://www.scholarpedia.org/article/Local_Binary_Patterns">Local Binary Patterns | Scholarpedia</a>).</p>
+  <p align="center">
+  <img height="200"  src="images/lbp-img.png">
+</p>
 
 <br/><br/>
 <h2>Sources</h2>
@@ -36,5 +42,4 @@ In component extraction, the component with the highest variance is taken from t
 <br/>
 
 [1] Lee, K. C., Ho, J., Kriegman, D. J., “Acquiring linear subspaces for face recognition under variable lighting,” IEEE Transactions on pattern analysis and machine intelligence, vol. 27, no. 5, pp. 684-698, 2005.<br/>
-
 
