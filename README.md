@@ -19,22 +19,22 @@ The purpose of this study is to compare the facial recognition performance of PC
 1- Veriyi Standardize Etmek: PCA verilerin varyanslarına bağlı olarak temel bileşenleri seçtiğinden veriler ölçeklendirilir. Veriyi standardize etmek için her birinden ortalama değeri çıkarıp, standart sapmaya bölüyoruz.
 </p>
 <p align="center">
-  <img height="200"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-13.51.57-300x167.png">
+  <img height="150"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-13.51.57-300x167.png">
 </p>
-<br/><p>
+<p>
 2- Kovaryans Matris Hesaplaması: Veri setindeki her değişkenin diğer değişkenler ile olan kovaryansını (ilişkisini) veren matristir (2).</p>
 <p align="center">
-  <img height="200"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-14.01.10-1024x266.png">
+  <img height="150"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-14.01.10-1024x266.png">
 </p>
-<br/><p>
+<p>
 3- Özvektörlerin ve Özyüzlerin Hesaplanması: Bazı vektörler bir başka matris ile çarpıldığında yön değiştirebilir (4). Bu çarpım sonucunda yine aynı yönde kalabilen bu özel vektörlere “özvektörler” denir. Bir özvektörün bir matris ile çarpımının, özvektörün bir lambda katına eşit olan değerlerine de “özdeğerler” denir (4). Özdeğerler ve özvektörler temel bileşenleri seçmemiz için bize yardımcı olur. </p>
 <p align="center">
-  <img height="200"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-14.05.01-768x297.png">
+  <img height="150"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-14.05.01-768x297.png">
 </p>
-<br/><p>
+<p>
 4- Özvektör Seçimi: Daha önce bahsettiğimiz gibi işimize yarayacak en anlamlı boyutları arıyoruz. Başlangıçta M tane değişken vardı, M>K olacak şekilde K tane özvektörün özdeğerlerine göre seçim yapılır. Seçilen özvektörleri özdeğerlerine göre büyükten küçüğe doğru seçilir. Bu matrise W diyelim.</p>
 
-<br/><p>
+<p>
 5- Verilerin Son Halini Alması: Temel bileşenleri elde ettiğimize göre mevcut verileri yeni alt uzaya göre konumlandıralım. Mevcut uzay başlangıçta ölçeklendirdiğimiz verilerden oluşuyor, temel bileşenlere göre uzay dönüşümü yapmak için elde ettiğimiz K tane temel bileşinden oluşan (W) matrisle mevcut uzayın her satırının transpozesiyle nokta çarpımı yapılır.</p>
 
 
