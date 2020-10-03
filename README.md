@@ -15,9 +15,9 @@ The purpose of this study is to compare the facial recognition performance of PC
 
 <h2>How does PCA work?</h2>
 <p>
-  Principal component analysis is an unsupervised learning method that makes feature extraction. Unsupervised learning can be thought of as models that can learn, based on the relationships between data, without having prior knowledge about the data. Increasing the number of observations (data) and variables makes it difficult to draw relationships from data. PCA extracts basic components on the data set, takes the projections of the data on the components and determines the positions of the data relative to the principal components instead of the main (x, y) axes.</p><br/>
+  Principal component analysis is an unsupervised learning method that makes feature extraction. Unsupervised learning can be thought of as models that can learn, based on the relationships between data, without having prior knowledge about the data. Increasing the number of observations (data) and variables makes it difficult to draw relationships from data. PCA extracts basic components on the data set, takes the projections of the data on the components and determines the positions of the data relative to the principal components instead of the main (x, y) axes.</p>
   <p align="center">
-  <img width="500"  src="http://marunreview.com/wp-content/uploads/2020/09/pca_dr-768x576.png">
+  <img height="200"  src="http://marunreview.com/wp-content/uploads/2020/09/pca_dr-768x576.png">
 </p>
 
 <p>
