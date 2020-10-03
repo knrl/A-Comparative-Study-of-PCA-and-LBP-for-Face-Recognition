@@ -3,7 +3,7 @@
 <br/>
 <br/>
 <p align="center">
-  <img width="500" height="320" src="images/yale-face-1.png">
+  <img width="500"  src="images/yale-face-1.png">
 </p>
 
 <p align="center">Fig 1. Yale Face Database</p>
