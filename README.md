@@ -1,8 +1,6 @@
 <h1 align="center"> A Comparative Study of PCA and LBP for Face Recognition Under Illumination Variations </h1>
 
-<br/><br/>
-<!-- ABOUT THE PROJECT -->
-## About The Study
+<br/>
 <br/>
 <p align="center">
   <img width="500" height="320" src="images/yale-face-1.png">
