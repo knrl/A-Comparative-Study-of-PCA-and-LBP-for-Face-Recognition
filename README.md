@@ -15,28 +15,10 @@ The purpose of this study is to compare the facial recognition performance of PC
 
 <h2>How does PCA work?</h2>
 <p>
-  <strong>We can divide the PCA process into 5 main steps;</strong>
-
-1- Standardizing the Data: As PCA chooses key components based on the variances of the data, the data is scaled. To standardize the data, we subtract the mean value from each and divide it by the standard deviation.
-</p>
-<p align="center">
-  <img height="150"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-13.51.57-300x167.png">
-</p>
+  Principal component analysis is an unsupervised learning method that makes feature extraction. Unsupervised learning can be thought of as models that can learn, based on the relationships between data, without having prior knowledge about the data. Increasing the number of observations (data) and variables makes it difficult to draw relationships from data. PCA extracts basic components on the data set, takes the projections of the data on the components and determines the positions of the data relative to the principal components instead of the main (x, y) axes.</p><br/>
 <p>
-2- Covariance Matrix Calculation: It is the matrix that gives the covariance (relationship) of each variable in the data set with other variables.</p>
-<p align="center">
-  <img height="150"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-14.01.10-1024x266.png">
+In component extraction, the component with the highest variance is taken from the data groups, and dimensions with lower variance are not taken considering that they will not be as effective as the others in the decision-making process. In this way, the size is reduced. PCA is therefore also used for size reduction and shaping the data set. Size reduction benefits; It can be stated as shortening the calculation time, making the data more understandable and facilitating visualization.
 </p>
-<p>
-3- Calculating Eigenvectors and Eigenfaces: Some vectors can change direction when multiplied by another matrix [2]. These special vectors that can remain in the same direction as a result of this product are called "eigenvectors". The values of the product of an eigenvector by a matrix that are equal to one lambda multiple of the eigenvector are called "eigenvalues" [2]. Eigenvalues and eigenvectors help us choose basic components. </p>
-<p align="center">
-  <img height="150"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-14.05.01-768x297.png">
-</p>
-<p>
-4- Eigenvector Selection: As we mentioned before, we are looking for the most meaningful dimensions that will work for us. In the beginning, there were M variables, the choice is made according to the eigenvalues of K eigenvectors such that M> K The selected eigenvectors are chosen according to their eigenvalues in descending order.</p>
-
-<p>
-5- Finalizing the Data: After its basic components are obtained, the existing data are positioned according to the new subspace. The existing space consists of data that we initially scaled, with the (W) matrix consisting of K fundamental components that we obtained to transform the space according to the fundamental components, the dot product is made with the transpose of each row of the existing space.</p>
 
 
 <br/><br/>
@@ -49,7 +31,7 @@ The purpose of this study is to compare the facial recognition performance of PC
 
 <br/>
 
-[1] Lee, K. C., Ho, J., Kriegman, D. J., “Acquiring linear subspaces for face recognition under variable lighting,” IEEE Transactions on pattern analysis and machine intelligence, vol. 27, no. 5, pp. 684-698, 2005.
+[1] Lee, K. C., Ho, J., Kriegman, D. J., “Acquiring linear subspaces for face recognition under variable lighting,” IEEE Transactions on pattern analysis and machine intelligence, vol. 27, no. 5, pp. 684-698, 2005.<br/>
 [2] Özdeğerler-Özvektörler: http://kisi.deu.edu.tr//kemal.sehirli/%c3%96zde%c4%9ferler.pdf
 
 
