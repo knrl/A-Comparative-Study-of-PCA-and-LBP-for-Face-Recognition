@@ -14,22 +14,22 @@ The purpose of this study is to compare the facial recognition performance of PC
 </p></div><br/>
 
 <p>
-PCA sürecini 5 ana adıma ayırabiliriz;
+  <strong>PCA sürecini 5 ana adıma ayırabiliriz;</strong>
 
 1- Veriyi Standardize Etmek: PCA verilerin varyanslarına bağlı olarak temel bileşenleri seçtiğinden veriler ölçeklendirilir. Veriyi standardize etmek için her birinden ortalama değeri çıkarıp, standart sapmaya bölüyoruz.
 </p>
 <p align="center">
-  <img width="500"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-13.51.57-300x167.png">
+  <img height="200"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-13.51.57-300x167.png">
 </p>
 <br/><p>
 2- Kovaryans Matris Hesaplaması: Veri setindeki her değişkenin diğer değişkenler ile olan kovaryansını (ilişkisini) veren matristir (2).</p>
 <p align="center">
-  <img width="500"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-14.01.10-1024x266.png">
+  <img height="200"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-14.01.10-1024x266.png">
 </p>
 <br/><p>
 3- Özvektörlerin ve Özyüzlerin Hesaplanması: Bazı vektörler bir başka matris ile çarpıldığında yön değiştirebilir (4). Bu çarpım sonucunda yine aynı yönde kalabilen bu özel vektörlere “özvektörler” denir. Bir özvektörün bir matris ile çarpımının, özvektörün bir lambda katına eşit olan değerlerine de “özdeğerler” denir (4). Özdeğerler ve özvektörler temel bileşenleri seçmemiz için bize yardımcı olur. </p>
 <p align="center">
-  <img width="500"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-14.05.01-768x297.png">
+  <img height="200"  src="http://marunreview.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-25-at-14.05.01-768x297.png">
 </p>
 <br/><p>
 4- Özvektör Seçimi: Daha önce bahsettiğimiz gibi işimize yarayacak en anlamlı boyutları arıyoruz. Başlangıçta M tane değişken vardı, M>K olacak şekilde K tane özvektörün özdeğerlerine göre seçim yapılır. Seçilen özvektörleri özdeğerlerine göre büyükten küçüğe doğru seçilir. Bu matrise W diyelim.</p>
