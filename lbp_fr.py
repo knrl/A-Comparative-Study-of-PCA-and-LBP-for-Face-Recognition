@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 path_train = ''
 training_data = []
 data_labels = []
-train_data_size = 48*38
+train_data_size = 48*30
 
 for i in range(1, train_data_size + 1):
 	train_image_path = path_train + str(i) + ".pgm"
@@ -18,7 +18,7 @@ model = cv2.face.LBPHFaceRecognizer_create()
 model.train(training_data, np.asarray(data_labels))
 
 path_test = ''
-test_data_size = 16*38
+test_data_size = 16*30 + 8*16
 dir_arr = ['right','left','up','down']
 tp_arr = [0,0,0,0]
 fp_arr = [0,0,0,0]
