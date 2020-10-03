@@ -16,6 +16,10 @@ The purpose of this study is to compare the facial recognition performance of PC
 <h2>How does PCA work?</h2>
 <p>
   Principal component analysis is an unsupervised learning method that makes feature extraction. Unsupervised learning can be thought of as models that can learn, based on the relationships between data, without having prior knowledge about the data. Increasing the number of observations (data) and variables makes it difficult to draw relationships from data. PCA extracts basic components on the data set, takes the projections of the data on the components and determines the positions of the data relative to the principal components instead of the main (x, y) axes.</p><br/>
+  <p align="center">
+  <img width="500"  src="http://marunreview.com/wp-content/uploads/2020/09/pca_dr-768x576.png">
+</p>
+
 <p>
 In component extraction, the component with the highest variance is taken from the data groups, and dimensions with lower variance are not taken considering that they will not be as effective as the others in the decision-making process. In this way, the size is reduced. PCA is therefore also used for size reduction and shaping the data set. Size reduction benefits; It can be stated as shortening the calculation time, making the data more understandable and facilitating visualization.
 </p>
@@ -32,6 +36,5 @@ In component extraction, the component with the highest variance is taken from t
 <br/>
 
 [1] Lee, K. C., Ho, J., Kriegman, D. J., “Acquiring linear subspaces for face recognition under variable lighting,” IEEE Transactions on pattern analysis and machine intelligence, vol. 27, no. 5, pp. 684-698, 2005.<br/>
-[2] Özdeğerler-Özvektörler: http://kisi.deu.edu.tr//kemal.sehirli/%c3%96zde%c4%9ferler.pdf
 
 
