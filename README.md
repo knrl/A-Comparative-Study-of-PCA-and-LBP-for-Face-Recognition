@@ -43,3 +43,18 @@ In component extraction, the component with the highest variance is taken from t
 
 [1] Lee, K. C., Ho, J., Kriegman, D. J., “Acquiring linear subspaces for face recognition under variable lighting,” IEEE Transactions on pattern analysis and machine intelligence, vol. 27, no. 5, pp. 684-698, 2005.<br/>
 
+
+## Citation Request
+
+If you benefited from this project, please cite the following paper
+
+```
+@inproceedings{erol2020comparative,
+  title={A Comparative Study of PCA and LBP for Face Recognition Under Illumination Variations},
+  author={Erol, Mehmet Kaan and Kapan, Umut Arda and {\"O}zt{\"u}rk, Muhammet Kerem and Uslu, Banu {\c{C}}al{\i}{\c{s}} and Bas, Anil},
+  booktitle={2020 Innovations in Intelligent Systems and Applications Conference (ASYU)},
+  pages={1--5},
+  year={2020},
+  organization={IEEE}
+}
+```
