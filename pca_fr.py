@@ -3,16 +3,18 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
+W, H = 605, 700
+
 path_train = ''
-training_data = []
-data_labels = []
 train_data_size = 48*30
+training_data = np.zeros((train_data_size, W, H))
+data_labels = np.zeros((train_data_size))
 
 for i in range(1, train_data_size + 1):
 	train_image_path = path_train + str(i) + ".pgm"
 	images = cv2.imread(train_image_path, cv2.IMREAD_GRAYSCALE)
-	training_data.append(np.asarray(images,dtype=np.unit8))
-	data_labels.append(i)
+	training_data[i] = np.asarray(images).astype(np.uint8)
+	data_labels[i] = i
 
 model = cv2.face.EigenFaceRecognizer_create()
 model.train(training_data, np.asarray(data_labels))
