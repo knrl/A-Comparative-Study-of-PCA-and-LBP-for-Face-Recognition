@@ -51,7 +51,7 @@ If you benefited from this project, please cite the following paper
 ```
 @inproceedings{erol2020comparative,
   title={A Comparative Study of PCA and LBP for Face Recognition Under Illumination Variations},
-  author={Erol, Mehmet Kaan and Kapan, Umut Arda and Oztturk, Muhammet Kerem and Uslu, Banu Calis Uslu and Bas, Anil},
+  author={Erol, Mehmet Kaan and Kapan, Umut Arda and Ozturk, Muhammet Kerem and Uslu, Banu Calis Uslu and Bas, Anil},
   booktitle={2020 Innovations in Intelligent Systems and Applications Conference (ASYU)},
   pages={1--5},
   year={2020},
