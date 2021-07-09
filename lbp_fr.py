@@ -5,21 +5,21 @@ import matplotlib.pyplot as plt
 
 W, H = 605, 700
 
-path_train = ''
+train_path = ''
 train_data_size = 48*30
-training_data = np.zeros((train_data_size, W, H))
-data_labels = np.zeros((train_data_size))
+training_data, labels = [], []
 
 for i in range(1, train_data_size + 1):
-	train_image_path = path_train + str(i) + ".pgm"
+	train_image_path = train_path + str(i) + ".pgm"
 	images = cv2.imread(train_image_path, cv2.IMREAD_GRAYSCALE)
-	training_data[i] = np.asarray(images).astype(np.uint8)
-	data_labels[i] = i
+	training_data.append(np.asarray(images).astype(np.float32))
+	labels.append(i)
 
+training_data = training_data / 255.
 model = cv2.face.LBPHFaceRecognizer_create()
 model.train(training_data, np.asarray(data_labels))
 
-path_test = ''
+test_path = ''
 test_data_size = 16*30 + 8*16
 dir_arr = ['right','left','up','down']
 tp_arr = [0,0,0,0]
@@ -28,22 +28,16 @@ y_true = []
 y_pred = []
 
 for i in range(1, test_data_size + 1):
-	test_image_path = path_test + str(i) + ".pgm"
+	test_image_path = test_path + str(i) + ".pgm"
 	test_image = cv2.imread(train_iamge_path, cv2.IMREAD_GRAYSCALE)
 	test_image_pred = model.predict(test_image)
 	a = i % 16
 	y_true.append(math.ceil(test_image_pred / 48))
 	y_pred.append(math.ceil(i / 16))
 	if (y_true[i-1] == y_pred[i-1]):
-		if (4 >= a): tp_arr[0]+=1
-		elif (8 >= a): tp_arr[1]+=1
-		elif (12 >= a): tp_arr[2]+=1
-		else: tp_arr[3]+=1
+		tp_arr[(a // 4) - 1] += 1
 	if (y_true[i-1] != y_pred[i-1]):
-		if (4 >= a): fp_arr[0]+=1
-		elif (8 >= a): fp_arr[1]+=1
-		elif (12 >= a): fp_arr[2]+=1
-		else: fp_arr[3]+=1
+		fp_arr[(a // 4) - 1] += 1
 
 from sklearn.metrics import f1_score, precision_score, recall_score
 from sklearn.metrics import  roc_auc_score, roc_curve
