@@ -3,6 +3,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
+model_name = 'lbph'
 W, H = 605, 700
 
 train_path = ''
@@ -14,9 +15,12 @@ for i in range(1, train_data_size + 1):
 	images = cv2.imread(train_image_path, cv2.IMREAD_GRAYSCALE)
 	training_data.append(np.asarray(images).astype(np.float32))
 	labels.append(i)
-
 training_data = training_data / 255.
-model = cv2.face.LBPHFaceRecognizer_create()
+
+if (model_name == 'lbph'):
+	model = cv2.face.LBPHFaceRecognizer_create()
+elif (model_name == 'pca'):
+	model = cv2.face.EigenFaceRecognizer_create()
 model.train(training_data, np.asarray(data_labels))
 
 test_path = ''
@@ -24,8 +28,7 @@ test_data_size = 16*30 + 8*16
 dir_arr = ['right','left','up','down']
 tp_arr = [0,0,0,0]
 fp_arr = [0,0,0,0]
-y_true = []
-y_pred = []
+y_true, y_pred = [], []
 
 for i in range(1, test_data_size + 1):
 	test_image_path = test_path + str(i) + ".pgm"
