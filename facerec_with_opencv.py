@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 model_name = 'lbph'
-W, H = 605, 700
+W, H = 512, 512
 
 train_path = ''
 train_data_size = 48*30
